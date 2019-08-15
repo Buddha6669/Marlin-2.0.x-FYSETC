@@ -290,6 +290,7 @@
 #define BOARD_BLACK_STM32F407ZE       4205  // BLACK_STM32F407ZE
 #define BOARD_STEVAL                  4206  // STEVAL-3DP001V1 3D PRINTER BOARD
 #define BOARD_BIGTREE_SKR_PRO_V1_1    4207  // BigTreeTech SKR Pro v1.1 (STM32F407ZG)
+#define BOARD_FYSETC_S6               4208  // FYSETC S6 board
 
 //
 // ARM Cortex M7
