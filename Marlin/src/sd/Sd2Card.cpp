@@ -260,6 +260,7 @@ bool Sd2Card::init(const uint8_t sckRateID, const pin_t chipSelectPin) {
   // Command to go idle in SPI mode
   while ((status_ = cardCommand(CMD0, 0)) != R1_IDLE_STATE) {
     if (ELAPSED(millis(), init_timeout)) {
+      SERIAL_ECHOLN("bad1");
       error(SD_CARD_ERROR_CMD0);
       goto FAIL;
     }
@@ -289,6 +290,7 @@ bool Sd2Card::init(const uint8_t sckRateID, const pin_t chipSelectPin) {
     }
 
     if (ELAPSED(millis(), init_timeout)) {
+      SERIAL_ECHOLN("bad2");
       error(SD_CARD_ERROR_CMD8);
       goto FAIL;
     }
@@ -304,6 +306,7 @@ bool Sd2Card::init(const uint8_t sckRateID, const pin_t chipSelectPin) {
   while ((status_ = cardAcmd(ACMD41, arg)) != R1_READY_STATE) {
     // Check for timeout
     if (ELAPSED(millis(), init_timeout)) {
+      SERIAL_ECHOLN("bad3");
       error(SD_CARD_ERROR_ACMD41);
       goto FAIL;
     }
