@@ -147,6 +147,8 @@ extern "C" {
 /* HAL configuration */
 #define HSE_VALUE               12000000U
 
+#define FLASH_PAGE_SIZE			512
+
 #ifdef __cplusplus
 } // extern "C"
 #endif

@@ -31,7 +31,16 @@
 //#define BOARD_NAME           "FYSETC S6"
 #define DEFAULT_MACHINE_NAME BOARD_NAME
 
-//#define I2C_EEPROM
+//
+// Flash EEPROM Emulation
+// 
+//#define FLASH_EEPROM_EMULATION
+#define SRAM_EEPROM_EMULATION
+#define HAL_STM32F4_EEPROM_SIZE 0x1000
+
+//#define EEPROM_PAGE_SIZE       0x800  /* Page size = 2KByte */
+//#define EEPROM_START_ADDRESS   (0x8000000 + 512 * 1024 - 2 * EEPROM_PAGE_SIZE))
+//#define E2END                  (EEPROM_PAGE_SIZE-1)
 
 //
 // Limit Switches
@@ -42,6 +51,7 @@
 //#define Y_MAX_PIN          PD10 // D58
 #define Z_MIN_PIN          PB12 // D28
 #define Z_MAX_PIN          PD8  // D56
+
 
 //
 // Servos
@@ -210,8 +220,8 @@
 #endif
 
 #if ENABLED(NEWPANEL)
-  #define BTN_EN1          PB1  // D17
-  #define BTN_EN2          PB2  // D18
+  #define BTN_EN1          PB2  // D18
+  #define BTN_EN2          PB1  // D17
   #define BTN_ENC          PE7  // D71
 #endif
 
