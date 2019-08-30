@@ -22,7 +22,7 @@
 #pragma once
 
 //
-// FYSETC F6 pin assignments
+// FYSETC F6 v1.3 pin assignments
 //
 
 #ifndef __AVR_ATmega2560__
@@ -30,7 +30,7 @@
 #endif
 
 #if ENABLED(SD_DETECT_INVERTED)
-  //#error "SD_DETECT_INVERTED must be disabled for the FYSETC_F6_13 board."
+  //#error "SD_DETECT_INVERTED must be disabled for the FYSETC_F6 board."
 #endif
 
 #define BOARD_NAME "FYSETC F6 1.3"

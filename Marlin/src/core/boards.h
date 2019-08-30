@@ -88,13 +88,14 @@
 #define BOARD_RAMPS_ENDER_4           1134  // Creality: Ender-4, CR-8
 #define BOARD_RAMPS_CREALITY          1135  // Creality: CR10S, CR20, CR-X
 #define BOARD_RAMPS_DAGOMA            1136  // Dagoma F5
-#define BOARD_FYSETC_F6_13            1137  // FYSETC F6
+#define BOARD_FYSETC_F6_13            1137  // FYSETC F6 v1.3
 #define BOARD_DUPLICATOR_I3_PLUS      1138  // Wanhao Duplicator i3 Plus
 #define BOARD_VORON                   1139  // VORON Design
 #define BOARD_TRONXY_V3_1_0           1140  // Tronxy TRONXY-V3-1.0
 #define BOARD_Z_BOLT_X_SERIES         1141  // Z-Bolt X Series
 #define BOARD_TT_OSCAR                1142  // TT OSCAR
 #define BOARD_OVERLORD                1143  // Overlord/Overlord Pro
+#define BOARD_FYSETC_F6_14            1144  // FYSETC F6 v1.4
 
 //
 // RAMBo and derivatives
